@@ -1,6 +1,6 @@
-AuthHandler = function(username, password, success, error) {
+AuthHandler = function(seed, success, error) {
 	if(cordova.platformId == "android"){
-		cordova.exec(success, error, "AuthHandler", "login", [username, password]);
+		cordova.exec(success, error, "AuthHandler", "setSeed", [seed]);
 	}
 }
 

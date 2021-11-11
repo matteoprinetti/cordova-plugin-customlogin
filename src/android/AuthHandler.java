@@ -7,17 +7,16 @@ import android.content.Context;
 
 public class AuthHandler extends CordovaPlugin {
 	
-	private String username = "";
-	private String password = "";
+	private String seed = "";
+
 
     @Override
     public boolean execute(String action, CordovaArgs args, final CallbackContext callbackContext) throws JSONException {
-		if ("login".equals(action)) {
+		if ("setSeed".equals(action)) {
 			try {
-				username = args.getString(0);
-				password = args.getString(1);
-				
-				callbackContext.success("Credentials updated.");
+				seed = args.getString(0);
+			 	
+				callbackContext.success("Seed set.");
 				
 			} catch (Exception e) {
 				callbackContext.error("Error updating credentials: " + e.getMessage());
@@ -31,6 +30,12 @@ public class AuthHandler extends CordovaPlugin {
     public boolean onReceivedHttpAuthRequest(CordovaWebView view, final ICordovaHttpAuthHandler handler, String host, String realm) {
         
 		//view.loadUrl("javascript:log('onReceivedHttpAuthRequest: " + username + "');");
+
+		// decrypt the seed ..
+
+		String username="";
+		String pasword ="";
+
 		handler.proceed(username, password);
 		
 		return true;
