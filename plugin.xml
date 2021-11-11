@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-auth-handler" version="1.0.1">
+
+    <name>AuthHandler</name>
+    <description>Allows user to set credentials for HttpAuthRequest handler via javascript using Apache Cordova</description>
+	<author>Jamie Rowland</author>
+    <keywords>authentication, httpauthrequest, ntlm</keywords>
+	<license>MIT</license>
+	
+	<js-module src="www/authhandler.js" name="AuthHandler">
+		<clobbers target="AuthHandler" />
+	</js-module>
+	
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AuthHandler">
+                <param name="android-package" value="com.jrow2286.plugins.AuthHandler"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/AuthHandler.java" target-dir="src/com/jrow2286/plugins/" />
+    </platform>
+
+</plugin>

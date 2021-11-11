@@ -1,0 +1,32 @@
+{
+  "name": "cordova-plugin-auth-handler",
+  "version": "1.0.1",
+  "description": "Allows user to set credentials for HttpAuthRequest handler via javascript using Apache Cordova",
+  "cordova": {
+    "id": "cordova-plugin-auth-handler",
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrow2286/cordova-plugin-auth-handler.git"
+  },
+  "keywords": [
+    "authentication",
+    "httpauthrequest",
+    "ntlm",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Jamie Rowland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrow2286/cordova-plugin-auth-handler/issues"
+  },
+  "homepage": "https://github.com/jrow2286/cordova-plugin-auth-handler#readme"
+}
