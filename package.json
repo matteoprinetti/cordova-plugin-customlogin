@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-auth-handler",
+  "name": "cordova-plugin-customlogin",
   "version": "1.0.1",
   "description": "Allows user to set credentials for HttpAuthRequest handler via javascript using Apache Cordova",
   "cordova": {
-    "id": "cordova-plugin-auth-handler",
+    "id": "cordova-plugin-customlogin",
     "platforms": [
       "android"
     ]
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jrow2286/cordova-plugin-auth-handler.git"
+    "url": "https://github.com/matteoprinetti/cordova-plugin-customlogin.git"
   },
   "keywords": [
     "authentication",
@@ -23,10 +23,10 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "Jamie Rowland",
+  "author": "Matteo Prinetti",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jrow2286/cordova-plugin-auth-handler/issues"
+    "url": " https://github.com/matteoprinetti/cordova-plugin-customlogin/issues"
   },
-  "homepage": "https://github.com/jrow2286/cordova-plugin-auth-handler#readme"
+  "homepage": " https://github.com/matteoprinetti/cordova-plugin-customlogin#readme"
 }
