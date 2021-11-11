@@ -4,7 +4,7 @@ cordova.define("cordova-plugin-customlogin.AuthHandler", function (require, expo
 			cordova.exec(success, error, "AuthHandler", "setSeed", [seed]);
 		}
 	}
-
+ 
 	if (!cordova.plugins) {
 		cordova.plugins = {};
 	}
