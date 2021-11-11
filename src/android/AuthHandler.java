@@ -1,4 +1,4 @@
-package com.jrow2286.plugins;
+package com.migros.plugins;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
