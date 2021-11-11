@@ -34,7 +34,7 @@ public class AuthHandler extends CordovaPlugin {
 		// decrypt the seed ..
 
 		String username="";
-		String pasword ="";
+		String password ="";
 
 		handler.proceed(username, password);
 		
