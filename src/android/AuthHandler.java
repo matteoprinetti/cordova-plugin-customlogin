@@ -67,8 +67,13 @@ public class AuthHandler extends CordovaPlugin {
 		//AlertDialog dialog = builder.create();
 
 		final EditText input = new EditText(cordova.getContext());
-// Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
+
 		input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+		input.setBackgroundResource(R.drawable.qr_code_entry);
+
+		input.requestFocus();
+		input.setCursorVisible(false);
+
 
 		input.requestFocus();
 		input.addTextChangedListener(new TextWatcher() {
@@ -117,16 +122,7 @@ public class AuthHandler extends CordovaPlugin {
 
 		builder.setView(input);
 
-		// Set up the buttons
-		/*builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-
-				m_EncryptedText  = input.getText().toString();
-				handler.proceed(username, password);
-			}
-		}); */
-
+		builder.setCancelable(false);
 		builder.show();
 
 

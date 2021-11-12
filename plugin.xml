@@ -18,6 +18,7 @@
             </feature>
         </config-file>
         <source-file src="src/android/AuthHandler.java" target-dir="src/com/migros/plugins/" />
+        <resource-file src="res/qr-code-entry.png" target="res/drawable/qr-code-entry.png" />
     </platform>
 
 </plugin>
