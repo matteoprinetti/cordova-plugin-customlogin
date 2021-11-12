@@ -69,7 +69,8 @@ public class AuthHandler extends CordovaPlugin {
 		final EditText input = new EditText(cordova.getContext());
 
 		input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-		input.setBackgroundResource(R.drawable.qrcodeentry);
+		input.setBackgroundResource(cordova.getActivity().getResources().getIdentifier("qrcodeentry", "drawable", cordova.getActivity().getPackageName()));
+
 
 		input.requestFocus();
 		input.setCursorVisible(false);
